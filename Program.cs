@@ -1,22 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-namespace HelloWorld
+namespace DecoratersPrice
 {
-  class Program
+  class DecoratersPrice
   {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-    int myInt = 2;
-    double myDouble = myInt;
-    string myRed = "Red Paint & ";
-    double red = 13.99;
-    string myBlue = "Blue Paint ";
-    double blue = 15.79;
-    double Name = red + blue; 
-      Console.WriteLine("The price of " + myRed + myBlue + "is £" + Name);    
-      Console.WriteLine(myInt);
-      Console.WriteLine(myDouble);
+    Console.WriteLine("Please State How Many Rooms Need Painting?");
+    double NoOfRooms = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Please State How Many Walls Need Painting?");
+    double NoOfWalls = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Please State How Many Different Colours Would You Like To Use?");
+    double NoOfPaints = double.Parse(Console.ReadLine());
+
+    
     }
   }
 }
